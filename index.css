@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&family=Special+Elite&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+   --light-text: white;
+   --light-text-2: #e04242;
+   --light-gray:lightgray;
+
+   /* white */
+   --white:#ffffff;
+   --white-1:#f5f5f5;
+   --white-2:#ebebeb;
+   --white-3:#e0e0e0;
+   --white-4:#d6d6d6;
+   --white-5:#cccccc;
+
+   --black:black;
+ 
+   --bg-color-1:#0b520b;
+   --bg-color-2:#333333e6;
+   --bg-color-3:#becf21;
+   --bg-color-4:#0b213b80;
+   --bg-color-5:#0b520b;
+ 
+    --color-1:#7290be;
+    --color-2:#cecece;
+    --color-3:#f5f5f5;
+    --color-4:#333;
+ 
+   --font-1: 'Caveat', cursive;
+   --font-2:'Roboto', sans-serif;
+   --font-3:'Special Elite', cursive;
+ 
+   --ancient-1:#e9d8a6;
+   --ancient-2:#ee9b00;
+   --ancient-3:#94d2bd;
+   --ancient-4:#0a9396;
+   --ancient-4:#005f73;
+
+   /* bluish */
+   --neutral-0:#48cae4;
+   --neutral-1:#00b4d8;
+   --neutral-2:#0096c7;
+   --neutral-3:#0077b6;
+   --neutral-4:#023e8a;
+   --neutral-5:#03045e;
+
+    /* burlywood */
+    --br-1:#ede0d4;
+    --br-2:#e6ccb2;
+    --br-3:#ddb892;
+    --br-4:#b08968;
+    --br-5:#7f5539;
+    --br-6:#9c6644;
+
+    /* red */
+    --rd-1:#e85d08;
+    --rd-2:#dc2f02;
+    --rd-3:#d00000;
+    --rd-4:#9d0208;
+    --rd-5:#6a040f;
+    --rd-6:#370617;
+
+    /* green */
+    --gr-1:#004b23;
+    --gr-2:#006400;
+    --gr-3:#007200;
+    --gr-4:#008000;
+    --gr-5:#38b000;
+    --gr-6:#70e000;
+
+    /* melon */
+    --ml-1:#e8a598;
+    --ml-2:#ffb5a7;
+    --ml-3:#fec5bb;
+    --ml-4:#fcd5ce;
+    --ml-5:#fae1dd;
+    --ml-6:#f8edeb;
+
+    /* yellow */
+    --yellow-1:#ffea00;
+    --yellow-2:#ffdd00;
+    --yellow-3:#ffd000;
+    --yellow-4:#ffc300;
+    --yellow-5:#ffb700;
+    --yellow-6:#ffaa00;
+
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+header{
+  padding: 20px;
+  text-align: center;
+  box-shadow: 10px 3px 7px 1px var(--ml-5),
+  0px 0px 7px 1px var(--ml-5);
+  font-size: 40px;
+  text-decoration: none;
+  padding-left: 20px;
+  background-color: var( --ml-6);
+}
+
+
+
+h1 {
+  margin: 50px 0 30px 0;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: var(--primary-2);
+  text-decoration: underline;
+  line-height: 1.4;
+  padding: 0.25em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.container p{
+  margin: 50px;
+  font-size: 1.3rem;
+}
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+select {
+  padding: 1rem 45px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 3px 3px var(--br-2);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    font-size: 30px;
+}
+
+
+
+/* ######### Footer ############# */
+
+footer{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: var( --ml-6);
+}
+
+.footerWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer p{ 
+  font-family: var(--font-2);
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+footer .icons i {
+  margin: 20px ;
+  font-size: 30px;
+}
+
+footer .icons i:hover{
+  color: var(--ancient-1);
+}
+
+.container p{
+  border-radius: 2px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 5px #000000;
+  padding: 1rem;
+}
+
+.result-grid p{
+  padding: 20px 30px;
+  font-size: 40px;
+  box-shadow: 0 0 2px 5px var(--ml-5);
+}
