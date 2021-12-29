@@ -165,6 +165,7 @@ select {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     font-size: 30px;
+    margin-bottom: 60px;
 }
 
 
@@ -172,7 +173,6 @@ select {
 /* ######### Footer ############# */
 
 footer{
-  position: absolute;
   text-align: center;
   width: 100%;
   bottom: 0;
@@ -213,4 +213,77 @@ footer .icons i:hover{
   padding: 20px 30px;
   font-size: 40px;
   box-shadow: 0 0 2px 5px var(--ml-5);
+}
+
+@media screen and (max-width:568px) {
+  html,body{
+      overflow-x: hidden;
+  }
+
+  header{
+      padding: 3px;
+      font-size: 1rem;
+      margin: 0;
+     
+  }
+
+  .result-grid {
+    font-size: 10px;
+    margin-bottom: 30px;
+    display: block; 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+select {
+  padding: 0.5rem;
+  margin-top: 5px;
+  display: inline-block; 
+}
+.container p{
+  margin: 15px;
+  font-size: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:5px;
+  place-items: center;
+}
+}
+
+@media screen and (min-width:569px) and (max-width:768px) {
+
+  .container p{
+    margin: 20px;
+    font-size: 1.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+    place-items: center;
+  }
+
+  .result-grid {
+    font-size: 10px;
+    margin-bottom: 30px;
+    display: block; 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  select {
+    padding: 1rem 2rem;
+    margin-top: 5px;
+   display: inline-block; 
+   font-size: 20px;
+  }
+
+  label {
+    font-size: 50px;
+    font-weight: 500;
+  }
 }
